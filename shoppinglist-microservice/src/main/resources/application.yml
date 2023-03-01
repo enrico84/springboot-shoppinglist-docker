@@ -1,0 +1,17 @@
+server:
+  port: 3024
+  servlet:
+    context-path: /shopping-list
+
+spring:
+  application:
+    name: shopping-list-service
+    cache:
+      type: redis
+    redis:
+      host: 172.19.0.2
+      port: 6379
+
+
+app:
+  message: Hello World default
