@@ -9,7 +9,7 @@
 - Verify the history of compilation: `docker history shoppinglist-microservice`
 
 
-- Start with Default profile: `docker --rm run -p 3024:3024 --name shoppinglist-microservice -t shoppinglist-microservice`
+- Start with Default profile: `docker run --rm -p 3024:3024 --name shoppinglist-microservice -t shoppinglist-microservice`
 - Start with Prod profile: `docker run -e "SPRING_PROFILES_ACTIVE=prod" -p 3024:3024 --name shoppinglist-microservice -t shoppinglist-microservice`
 - Check on the browser to http://localhost:3024/shopping-list/ and http://localhost:3024/shopping-list/message
 
